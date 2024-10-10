@@ -1,0 +1,122 @@
+* { margin:0; padding: 0;}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.sc {text-align: center; width: 100%; height: 213; background: #e093a9; padding: 20px}
+
+nav {background-color: #e093a9; height: 90vh; padding: 1px; display: none}
+.responsive {display: block}
+nav a {font-family: "Montserrat"; color: black; text-decoration: none; border-bottom: 1px solid #000; display: block; padding: 8px; margin: 10px; font-size: 20px}
+.logo {width: 200px; margin: 2px}
+.icono {text-decoration: none; font-size: 20px; position: absolute; top: 20px; left: 20px; color: black; font-weight: 100}
+
+h1 {font-family:  "Montserrat"; font-size: 20px; text-align: center; margin: 20px; text-transform: uppercase; font-weight: 500}
+
+h2 {font-family: "Montserrat"; color: black; text-decoration: none; font-size: 20px; text-align: center; font-weight: 300; margin: 10px}
+
+h3 {font-family: "Montserrat"; color: black; text-decoration: none; border-bottom: 1px solid #000; display: block; padding: 8px; margin: 10px; font-size: 20px; text-align: center; text-transform: uppercase; font-weight: 500}
+
+h4 {font-family: "Montserrat"; background-color: white; font-weight: 500; text-transform: uppercase; font-size: 10px; padding: 8px; color: black; margin: 6px}
+
+h5 {font-family: "Montserrat"; color: black; text-decoration: none; font-size: 15px; text-align: center; font-weight: 300; border-top: 1px solid #000; border-bottom: 1px solid #000; margin-top: 4%; padding: 8px}
+
+h6 {font-family: "Montserrat"; color: black; text-decoration: none; font-size: 15px; text-align: center; font-weight: 300; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 8px}
+
+p {font-family: "Montserrat"; color: black; font-size: 12px; font-weight: 300; margin: 2px; word-wrap: break-word}
+
+.contenedorap {width: 90%; margin: 5%; display: flex; flex-flow: wrap}
+.fotoap {width: 100%; align-content: center}
+.textoap {width: 100%}
+
+.cajacontenedora {width: 96%; margin: 2%; display: flex; flex-flow: wrap; justify-content: center}
+.pelicula {width: 42%; background-size: cover; background-position: center; margin: 4%; display: flex; align-items: flex-end; flex-flow: wrap; position: relative}
+.pelicula img {width: 100%}
+.pelicula a {text-decoration: none; width: 100%; padding: 1px; box-sizing: border-box; position: absolute}
+.flecha {color: black; font-size: 12px; text-decoration: none; float: right} 
+
+.cajafooter {background-color: #e093a9; padding: 4%; display: flex; flex-flow: wrap}
+.logofooter {width: 40%}
+.imglogofooter {width: 100%}
+.textofooter {width: 100%}
+
+.fotopris1 {width: 96%; margin: 2%}
+.textoprinpris {margin-right: 2%; margin-left: 2%; margin-bottom: 2%}
+.sliderpris {width: 90%; overflow: hidden; margin: 5%; position: relative}
+.slidespris {display: flex; transition: transform 0.5s ease-in-out}
+.slidepris {min-width: 100%; box-sizing: border-box}
+.prev, .next {position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -22px; color: white; border: none; cursor: pointer; border-radius: 3px}
+.prev {left: 0}
+.next {right: 0}
+.cajatrailer {width: 100%; display: flex; flex-flow: wrap}
+
+.trailerpris {width: 96%; margin: 2%; justify-content: center}
+.textotrailerpris {width: 96%; margin: 2%}
+.videotrailerpris {width: 100%}
+
+.cajacontenedorabio {display: flex; flex-flow: wrap}
+.cajabio {width: 100%}
+.fotobio {width: 96%; margin: 2%}
+.textobio {width: 96%; margin-top: 2px; margin-bottom: 20px; margin-left: 10px; margin-right: 10px}
+
+.sliderbio1990 {width: 96%; margin: 2%; overflow: hidden; position: relative}
+.slidesbio1990 {width: 100%; display: flex; transition: transform 0.5s ease-in-out}
+.slidebio1990 {min-width: 100%; box-sizing: border-box}
+
+.sliderbio2003 {width: 96%; margin: 2%; overflow: hidden; position: relative}
+.slidesbio2003 {width: 100%; display: flex; transition: transform 0.5s ease-in-out}
+.slidebio2003 {min-width: 100%; box-sizing: border-box}
+
+.sliderbio2006 {width: 96%; margin: 2%; overflow: hidden; position: relative}
+.slidesbio2006 {width: 100%; display: flex; transition: transform 0.5s ease-in-out}
+.slidebio2006 {min-width: 100%; box-sizing: border-box}
+
+.contenedoranuncio {background-color: #e093a9; display: flex; flex-flow: wrap; align-items: center; width: 300px; height: 600px}
+.logoanuncio {width: 90%; margin-left: 5%; margin-top: 5%}
+.botonanuncio {display: block; padding: 8px; background-color: white; text-decoration: none; font-family: "Montserrat"; color: black; width: 20%; margin-left: 37%; margin-top: 5%; margin-bottom: 5%; text-align: center; text-transform: uppercase; font-size: 12px; font-weight: 500}
+.imganuncio {width: 80%; margin-left: 10%; margin-top: 5%; margin-bottom: 5%}
+h8 {font-family: "Montserrat"; color: black; text-decoration: none; display: block; font-size: 20px; text-align: center; text-transform: uppercase; font-weight: 500; margin-right: 7%; margin-left: 7%}
+
+.cajaanuncionat {width: 90%; margin: 5%}
+
+.form {width: 90%; margin: 5%; display: block}
+.formtexto {border: 2px solid #E093A9; border-radius: 10px; width: 70%}
+input {margin: 2%; display: block}
+.formcheck {display: inline-flex}
+
+
+
+
+@media (min-width:727px) {
+	.pelicula {width: 21.3%}
+	nav {display: block; height: auto; text-align: center}
+	nav li {display: inline-block}
+	nav a {border-bottom: none}
+	.icono {display: none}
+	.fotoap {width: 60%; margin-left: 45%}
+	.textoap {width: 30%; align-content: center; padding: 5%}
+	.logofooter {width: 25%; padding-right: 2%}
+	.textofooter {width: 70%}
+	.cajacontenedorabio {justify-content: center}
+	.cajabio {width: 21%; padding: 10px}
+	.trailerpris {width: 60%}
+	.textotrailerpris {width: 30%}
+	.videotrailerpris {padding: 2%}
+	h6 {border: 1px solid #000000}
+	sliderbio1990 {margin: 0%; width: 100%}
+	sliderbio2003 {margin: 0%; width: 100%}
+	sliderbio2006 {margin: 0%; width: 100%}
+	.fotobio {margin: 0%; width: 100%}
+	.contenedoranuncio {width: 728px; height: 90px; align-content: space-around; align-items: center}
+	.logoanuncio {width: 20%; margin: 2.5%}
+	.imganuncio {width: 8%; margin-left: 2%}
+	.contenedoranuncio h8 {width: 20%; margin: 2.5%; font-size: 15px}
+	.botonanuncio {width: 10%; font-size: 10px; padding: 5px; margin: 2.5%}
+	.formtexto {width: 25%}
+}
