@@ -9,184 +9,26 @@ function MiFuncion() {
      }
    }
 
-var slideIndex = 1;
-    showDivs(slideIndex);
- 
-    function plusDivs(n) {
-    showDivs(slideIndex += n);
-    }
- 
-    function showDivs(n) {
-        var i;
- 
-        // acá define qué elemento entra en el slider
-        var x = document.getElementsByClassName("slidepris");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length} 
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-    }
- 
-    carousel();
- 
-    function carousel() {
- 
-    var i;
- 
-    var x = document.getElementsByClassName("slidepris");
- 
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
- 
-    slideIndex++;
- 
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
- 
-    setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
- 
+ let currentIndex = 0; // Índice de la imagen actual
+  const slides = document.getElementById('slidess2');
+  const totalSlides = document.querySelectorAll('.slides2').length;
+
+  function changeSlide(direction) {
+    // Actualiza el índice de la imagen
+    currentIndex += direction;
+
+    // Vuelve al inicio o al final si el índice es inválido
+    if (currentIndex >= totalSlides) {
+      currentIndex = 0;
+    } else if (currentIndex < 0) {
+      currentIndex = totalSlides - 1;
     }
 
+    // Aplica el cambio de imagen mediante la transformación
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
 
-var slideIndex = 1;
-    showDivs(slideIndex);
- 
-    function plusDivs(n) {
-    showDivs(slideIndex += n);
-    }
- 
-    function showDivs(n) {
-        var i;
- 
-        // acá define qué elemento entra en el slider
-        var x = document.getElementsByClassName("slidebio1990");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length} 
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-    }
- 
-    carousel();
- 
-    function carousel() {
- 
-    var i;
- 
-    var x = document.getElementsByClassName("slidebio1990");
- 
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
- 
-    slideIndex++;
- 
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
- 
-    setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
- 
-    }
-
-var slideIndex = 1;
-    showDivs(slideIndex);
- 
-    function plusDivs(n) {
-    showDivs(slideIndex += n);
-    }
- 
-    function showDivs(n) {
-        var i;
- 
-        // acá define qué elemento entra en el slider
-        var x = document.getElementsByClassName("slidebio2003");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length} 
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-    }
- 
-    carousel();
- 
-    function carousel() {
- 
-    var i;
- 
-    var x = document.getElementsByClassName("slidebio2003");
- 
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
- 
-    slideIndex++;
- 
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
- 
-    setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
- 
-    }
-
-var slideIndex = 1;
-    showDivs(slideIndex);
- 
-    function plusDivs(n) {
-    showDivs(slideIndex += n);
-    }
- 
-    function showDivs(n) {
-        var i;
- 
-        // acá define qué elemento entra en el slider
-        var x = document.getElementsByClassName("slidebio2006");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length} 
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-    }
- 
-    carousel();
- 
-    function carousel() {
- 
-    var i;
- 
-    var x = document.getElementsByClassName("slidebio2006");
- 
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
- 
-    slideIndex++;
- 
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
- 
-    setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
- 
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Función para cambiar la imagen de vista previa
+  function changeImage(imageSrc) {
+    document.getElementById("preview").src = imageSrc;
+  }
