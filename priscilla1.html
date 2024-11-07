@@ -42,22 +42,25 @@
 		</div>
 		
 		<h5>BEHIND THE SCENES</h5>
-		<div class="preview-container">
-			<img id="preview" src="img/imagecompressor/slidepris1-min.png" alt="Vista ampliada">
+		<!-- Galería de miniaturas -->
+		<div class="gallery">
+			<img src="img/imagecompressor/slidepris1-min.png" alt="Imagen 1" onclick="openLightbox(this.src)">
+			<img src="img/imagecompressor/slidepris2-min.png" alt="Imagen 2" onclick="openLightbox(this.src)">
+			<img src="img/imagecompressor/slidepris3-min.png" alt="Imagen 3" onclick="openLightbox(this.src)">
+			<img src="img/imagecompressor/slidepris4-min.png" alt="Imagen 4" onclick="openLightbox(this.src)">
+			<img src="img/imagecompressor/slidepris5-min.png" alt="Imagen 5" onclick="openLightbox(this.src)">
+			<img src="img/imagecompressor/slidepris6-min.png" alt="Imagen 6" onclick="openLightbox(this.src)">
+			<img src="img/imagecompressor/slidepris7-min.png" alt="Imagen 7" onclick="openLightbox(this.src)">
+			<img src="img/imagecompressor/slidepris8-min.png" alt="Imagen 8" onclick="openLightbox(this.src)">
+			<img src="img/imagecompressor/slidepris9-min.png" alt="Imagen 9" onclick="openLightbox(this.src)">
+		</div>
+		
+		<!-- Contenedor de la vista ampliada -->
+		<div class="lightbox" id="lightbox">
+			<span class="close-btn" onclick="closeLightbox()">&times;</span>
+			<img id="expandedImage" src="" alt="Imagen Ampliada">
 		</div>
 
-<!-- Galería de miniaturas -->
-		<div class="gallery">
-			<img src="img/imagecompressor/slidepris1-min.png" alt="Imagen 1" class="thumbnail" onclick="changeImage('imagen1.jpg')">
-			<img src="img/imagecompressor/slidepris2-min.png" alt="Imagen 2" class="thumbnail" onclick="changeImage('imagen2.jpg')">
-			<img src="img/imagecompressor/slidepris3-min.png" alt="Imagen 3" class="thumbnail" onclick="changeImage('imagen3.jpg')">
-			<img src="img/imagecompressor/slidepris4-min.png" alt="Imagen 4" class="thumbnail" onclick="changeImage('imagen4.jpg')">
-			<img src="img/imagecompressor/slidepris5-min.png" alt="Imagen 4" class="thumbnail" onclick="changeImage('imagen4.jpg')">
-			<img src="img/imagecompressor/slidepris6-min.png" alt="Imagen 4" class="thumbnail" onclick="changeImage('imagen4.jpg')">
-			<img src="img/imagecompressor/slidepris7-min.png" alt="Imagen 4" class="thumbnail" onclick="changeImage('imagen4.jpg')">
-			<img src="img/imagecompressor/slidepris8-min.png" alt="Imagen 4" class="thumbnail" onclick="changeImage('imagen4.jpg')">
-			<img src="img/imagecompressor/slidepris9-min.png" alt="Imagen 4" class="thumbnail" onclick="changeImage('imagen4.jpg')">
-		</div>
 		
 		<div class="cajatrailer">
 			<div class=>
@@ -82,6 +85,18 @@
 	</footer>
 	
  <script src="script1.js"></script>
+	<script>
+  // Función para abrir la vista ampliada
+  function openLightbox(src) {
+    document.getElementById("expandedImage").src = src;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  // Función para cerrar la vista ampliada
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
 	
 	</body>
 	</html>

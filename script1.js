@@ -27,8 +27,3 @@ function MiFuncion() {
     // Aplica el cambio de imagen mediante la transformación
     slides.style.transform = `translateX(-${currentIndex * 100}%)`;
   }
-
-// Función para cambiar la imagen de vista previa
-  function changeImage(imageSrc) {
-    document.getElementById("preview").src = imageSrc;
-  }

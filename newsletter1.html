@@ -31,23 +31,19 @@
 	</header>	
 	
 	<main>
-		<div class="form">
+		<div class="form-container">
 			<h1>Newsletter</h1>
-			<p>¡No te pierdas nada del fascinante mundo de Sofia Coppola! Suscríbete a nuestro newsletter y recibe directamente en tu correo las últimas noticias, análisis exclusivos de su filmografía, y recomendaciones de cine independiente</p>
-			<input type="email" required class="formtexto" placeholder="email">
-			<form>
-			<input type="text" class="formtexto" placeholder="nombre (opcional)">
-			<div class="formcheck">
-				<input type="checkbox" required> 
-				<p>Quiero recibir el Newsletter de Sofia Coppola semanalmente</p>
-			</div>	
-			<div class="formcheck">
-				<input type="checkbox" required> 
-				<p>Acepto los términos y condiciones</p>
-			</div>	
-			<input type="submit" class="formboton" value="Suscribirse">
-			</form>	
-		</div>	
+			<p>¡No te pierdas nada del fascinante mundo de Sofia Coppola! Suscribite a nuestro newsletter y recibí en tu correo las últimas noticias, análisis exclusivos de su filmografía, y recomendaciones de cine independiente</p>
+			<form id="subscriptionForm">
+				<input type="text" id="name" placeholder="Nombre (opcional)">
+				<input type="email" id="email" placeholder="Correo electrónico" required>
+				<label>
+					<input type="checkbox" id="terms" required> Acepto los términos y condiciones
+				</label>
+				<button type="button" onclick="submitForm()">Enviar</button>
+			</form>
+			<div class="thank-you-message" id="thankYouMessage">¡Gracias por suscribirte!</div>
+		</div>
 		
 	</main>
 	
