@@ -74,7 +74,7 @@ h8 {font-family: "Montserrat"; color: black; text-decoration: none; display: blo
 .peliculas1 img {width: 100%}
 .peliculas1 a {text-decoration: none; width: 100%; padding: 1px; box-sizing: border-box; position: absolute}
 .logoanuncio {width: 90%; margin-left: 5%; margin-top: 5%}
-.botons1 {padding: 15px; text-decoration: none; font-family: "Montserrat"; color: black; width: 20%; text-align: center; text-transform: uppercase; font-size: 12px; font-weight: 500; border: 1px solid #e093a9}
+.botons1 {padding: 10px; text-decoration: none; font-family: "Montserrat"; color: black; width: 20%; text-align: center; text-transform: uppercase; font-size: 12px; font-weight: 500; border: 1px solid #e093a9}
 
 .s2texto {width: 90%; margin: 5%}
 .s2 {display: flex; flex-flow: wrap}
@@ -119,49 +119,13 @@ h8 {font-family: "Montserrat"; color: black; text-decoration: none; display: blo
     .prev:hover, .next:hover {
       background-color: rgba(0, 0, 0, 0.8)}
 
-/* Estilo del contenedor de la imagen */
-    .image-container {
-      position: relative;
-      width: 90%; /* Ancho de la imagen */
-      margin: 5%;
-      border-radius: 1px;
-      overflow: hidden; /* Para que el texto no sobresalga */
-    }
+.botons3 {padding: 10px; text-decoration: none; font-family: "Montserrat"; color: black; width: 20%; text-align: center; text-transform: uppercase; font-size: 12px; font-weight: 500; border: 1px solid #e093a9; margin: 5%}
+.imagens3 {width: 90%; margin: 5%}
+.textos3 {margin: 5%; margin-top: 0}
+.sectionrollover {justify-content: center; width: 100%; display: flex; flex-flow: wrap}
+.rollover {width: 100%}
 
-    /* Estilo de la imagen */
-    .image-container img {
-      width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-      height: auto;
-      display: block;
-    }
 
-    /* Estilo del texto superpuesto */
-    .overlay {
-      font-family: "Montserrat";
-	  font-weight: 300;	
-	  position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 10px;
-      background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
-      opacity: 0; /* Ocultar el texto inicialmente */
-      transition: opacity 0.3s ease; /* Transición suave */
-    }
-
-.overlay p {color: white; margin: 1%; text-align: center}
-
- .botons3 {padding: 15px; text-decoration: none; font-family: "Montserrat"; color: black; width: 20%; margin-left: 35%; margin-bottom: 5%; text-align: center; text-transform: uppercase; font-size: 12px; font-weight: 500; border: 1px solid #e093a9}
-
-    /* Mostrar el texto al pasar el mouse */
-    .image-container:hover .overlay {
-      opacity: 1; /* Hacer visible el texto */
-    }
 
 .fondo {background-image: url("img/scriptcelus.png"); background-size: cover; background-attachment: fixed; background-position: top center}
 
@@ -305,8 +269,8 @@ h8 {font-family: "Montserrat"; color: black; text-decoration: none; display: blo
 	.overlay p {font-size: 15px; margin: 5%}
 	.image-container {width: 40%; margin-left: 30%; margin-top: 2%}
 	.fondo {background-image: url("img/scriptweb.png"); background-size: cover; background-attachment: fixed; background-position: top center}
-	.botons3 {margin-left: 45%}
 	.form-container input[type="text"],
     .form-container input[type="email"] {
 		width:100%;}
+	.rollover {width: 50%}
 }
