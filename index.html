@@ -124,6 +124,17 @@
 			
 		</div>	
 	</section>
+		
+	<section>
+		<div class="scarchive">
+			<img src="img/rollover1.png"
+				 alt="Imagen inicial" 
+				 class="rollover-image" 
+				 onmouseover="changeImage('img/rollover2.png')" 
+				 onmouseout="changeImage('img/rollover1.png')" 
+				 id="rolloverImage">
+		</div>
+	</section>	
 	
 	<section>
 		<div class="cajaanuncionat">
@@ -146,6 +157,12 @@
 	</footer>
 	
  <script src="script1.js"></script>
+	<script>
+  // Función para cambiar la imagen
+  function changeImage(newSrc) {
+    document.getElementById("rolloverImage").src = newSrc;
+  }
+</script>
 </body>
 </html>
 

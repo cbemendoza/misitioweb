@@ -234,6 +234,18 @@ h8 {font-family: "Montserrat"; color: black; text-decoration: none; display: blo
       margin-top: 20px;
     }
 
+.rollover-image {
+      width: 80%;
+	margin: 10%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    /* Efecto visual para resaltar la imagen al hacer roll-over */
+    .rollover-image:hover {
+      transform: scale(1.05);
+    }
+
 @media (min-width:727px) {
 	.pelicula {width: 21.3%}
 	nav {display: block; height: auto; text-align: center}
