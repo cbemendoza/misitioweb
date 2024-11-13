@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Presentación Camila Mendoza</title>
+<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+</head>
+
+<body>
+	<header>
+		<div class="sc">
+		<a href="index.html"><img src="img/logo.svg" class="logo" alt="logo"></a>
+		</div>
+	</header>
+	
+	<main>
+		
+	<section>
+		<div>
+			<div class="m31text">
+				<p>Camila Mendoza |</p>
+				<p>Prof. Wenceslao Zavala |</p>
+				<p>Producción Digital I</p>
+			</div>
+			<picture>
+				<source media="(min-width: 768px)" srcset="img/sofianewsletter.jpg" class="m31img">
+				<source media="(min-width: 480px)" srcset="img/imagecompressor/sofianewsletter.jpg" class="m31img">
+				<img src="img/sofianewsletter.jpg" class="m31img">	
+			</picture>	
+		</div>
+	</section>
+		
+	<section>
+		<h5>Sobre el sitio web</h5>
+		<div class="m32text">
+			<p>Página web oficial de Sofia Coppola: Contiene información de sus pelíuclas, su vida y sus proyectos.</p>
+			<p>Sofia Coppola es una directora, guionista, productora y actriz estadounidense. Dirigió "Las Vírgenes Suicidas" y en 2003 ganó un Premio Oscar a mejor guion original por "Lost in Translation, además de ser la tercera mujer en la historia en ser nominada a Mejor Dirección por la Academia."</p>
+		</div>	
+	</section>	
+		
+	<section>
+		<h5>Contenido</h5>
+		<div class="contenido">
+		<div class="seccion">
+			<img src="img/m32filmo.png" class="imgseccion">
+			<h9>Filmografía</h9>
+			<p>Sección donde se encuentra información sobre cada una de sus películas. Desde datos duros hasta anécdotas e historias sobre el rodaje de cada una, además de imágenes de las mismas.</p>
+		</div>
+		
+		<div class="seccion">
+			<img src="img/m32bio.png" class="imgseccion">
+			<h9>Biografía</h9>
+			<p>Sección donde se puede ver y leer sobre momentos importantes en la vida de Sofia Coppola, abarcando su vida personal y profesional.</p>
+		</div>
+		
+		<div class="seccion">
+			<img src="img/m32art.png" class="imgseccion">
+			<h9>Artículos</h9>
+			<p>En esta sección se pueden encontrar artículos sobre las películas de Sofia analizando desde la dirección de arte, sus guiones, sus proyectos y su influencia e impacto en la sociedad actual y en distintas disciplinas artísticas</p>
+		</div>
+		
+		<div class="seccion">
+			<img src="img/m32sca.png" class="imgseccion">
+			<h9>Sofia Coppola Archive</h9>
+			<p>Todo sobre el nuevo libro de Sofia Coppola</p>
+		</div>
+		
+		<div class="seccion">
+			<img src="img/m32news.png" class="imgseccion">
+			<h9>Newsletter</h9>
+			<p>Sección donde los usuarios pueden llenar un formulario para recibir por mail noticias sobre el sitio web y sobre la directora.</p>
+		</div>	
+		</div>	
+	</section>	
+		
+	<section>
+		<img src="img/mapadesitio.png" class="m33img">
+	</section>	
+		
+	<section>
+		<h5>Wireframes</h5>
+		<div class="slider-containerm34">
+			<img src="img/wire1.png" class="slider-image active" alt="Imagen 1">
+			<img src="img/wire2.png" class="slider-image" alt="Imagen 2">
+			<img src="img/wire3.png" class="slider-image" alt="Imagen 3">
+			<img src="img/wire4.png" class="slider-image" alt="Imagen 4">			
+			<button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+			<button class="slider-btn next" onclick="changeSlide(1)"> &#10095;</button>
+		</div>
+		
+		<div>
+			<img src="img/filmoweb1.png"
+     alt="Imagen inicial" 
+     class="rollover-image1" 
+     onmouseover="changeImage('img/filmoweb2.png')" 
+     onmouseout="changeImage('img/filmoweb1.png')" 
+     id="rolloverImage1">
+		</div>
+	
+			
+		<section>
+		<div class="cajaanuncionat">
+		<iframe src="https://cbemendoza.github.io/misitioweb/anuncio1.html" name="marco" frameborder="0" scrolling="no" class="anuncionat"></iframe>	
+		</div>	
+	</section>	
+
+	</main>	
+	
+	<footer>
+		<div class="cajafooter">
+			
+			<div class="logofooter">
+		<a href="index.html"><img src="img/logo.svg" class="imglogofooter" alt="logo"></a>
+				</div>
+			
+			<div class="textofooter">
+		<p>Esta es una página web destinada a contarte el universo de Sofia Coppola. Vas a poder encontrar información sobre sus películas y sus diversos proyectos, analizando su impacto en la cultura y en la sociedad.</p>
+				</div>
+			
+			<a href="presentacion.html" target="_blank" class="botonpresentacion">Sobre el sitio web</a>
+		</div>
+	
+	</footer>
+	
+	<script>
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    const slides = document.querySelectorAll(".slider-image");
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      if (i === index) slide.classList.add("active");
+    });
+  }
+
+  function changeSlide(direction) {
+    const slides = document.querySelectorAll(".slider-image");
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+</script>
+	<script>
+  // Función para cambiar la imagen
+  function changeImage(newSrc) {
+    document.getElementById("rolloverImage1").src = newSrc;
+  }
+</script>
+
+</body>
+</html>

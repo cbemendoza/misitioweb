@@ -246,6 +246,73 @@ h8 {font-family: "Montserrat"; color: black; text-decoration: none; display: blo
       transform: scale(1.05);
     }
 
+.m31img {width: 100%}
+.m31text {justify-content: center; display: flex; flex-flow: wrap}
+.m31text p {text-align: center}
+.m32text {margin: 2%}
+.imgseccion {width: 90%; margin: 5%}
+h9 {font-family: 'Montserrat'; margin-left: 5%}
+.seccion p {margin: 5%}
+.contenido {display: flex; flex-flow: wrap}
+.m33img {width: 100%; margin-top: 3%}
+
+ /* Contenedor del slider */
+    .slider-containerm34 {
+      position: relative;
+      width: 90%;
+      margin: 5%;
+      overflow: hidden;
+      border-radius: 1px}
+
+    /* Imágenes del slider */
+    .slider-image {
+      width: 100%;
+      display: none;
+    }
+
+    /* Mostrar la primera imagen */
+    .slider-image.active {
+      display: block;
+    }
+
+    /* Botones para navegar */
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      padding: 10px;
+      cursor: pointer;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      border-radius: 5px;
+    }
+
+    /* Botón anterior a la izquierda */
+    .prev {
+      left: 10px;
+    }
+
+    /* Botón siguiente a la derecha */
+    .next {
+      right: 10px;
+    }
+
+.rollover-image1 {
+      width: 90%;
+      height: auto;
+      transition: transform 0.3s ease;
+	margin: 5%
+    }
+
+    /* Efecto visual para resaltar la imagen al hacer roll-over */
+    .rollover-image1:hover {
+      transform: scale(1.05);
+    }
+
+.botonpresentacion {padding: 10px; text-decoration: none; font-family: "Montserrat"; color: black; width: 100%; text-align: center; text-transform: uppercase; font-size: 12px; font-weight: 500; border: 1px solid #000; margin-top: 2%}
+
 @media (min-width:727px) {
 	.pelicula {width: 21.3%}
 	nav {display: block; height: auto; text-align: center}
@@ -285,4 +352,6 @@ h8 {font-family: "Montserrat"; color: black; text-decoration: none; display: blo
     .form-container input[type="email"] {
 		width:100%;}
 	.rollover {width: 50%}
+	.contenido {width: 100%}
+	.seccion {width: 20%}
 }
